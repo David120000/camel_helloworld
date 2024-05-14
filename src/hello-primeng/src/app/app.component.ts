@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
 import { FilterMatchMode, PrimeNGConfig } from 'primeng/api';
 
 @Component({
@@ -9,6 +11,7 @@ import { FilterMatchMode, PrimeNGConfig } from 'primeng/api';
 export class AppComponent implements OnInit {
  
   title = 'hello-primeng';
+  msg = '';
 
   constructor(private primengConfig: PrimeNGConfig) { }
 
